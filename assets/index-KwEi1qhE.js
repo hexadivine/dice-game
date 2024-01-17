@@ -76,7 +76,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
 
     flex-direction: ${e=>e.$flexdirection?e.$flexdirection:"row"};
-`;function Im({startGame:e}){return R.jsxs(Lm,{children:[R.jsx("div",{className:"dice_img",children:R.jsx("img",{src:"./images/dices.png",alt:"dices"})}),R.jsxs(Rm,{children:[R.jsx("h1",{children:"DICE GAME"}),R.jsx(Yi,{$type:"primary",$animation:"true",onClick:e,children:"Play Now"})]})]})}const Om=qe.div`
+`;function Im({startGame:e}){return R.jsxs(Lm,{style:{flexWrap:"wrap"},children:[R.jsx("div",{className:"dice_img",children:R.jsx("img",{src:"./images/dices.png",alt:"dices"})}),R.jsxs(Rm,{children:[R.jsx("h1",{children:"DICE GAME"}),R.jsx(Yi,{$type:"primary",$animation:"true",onClick:e,children:"Play Now"})]})]})}const Om=qe.div`
     .score {
         font-size: 60px;
         font-weight: 500;

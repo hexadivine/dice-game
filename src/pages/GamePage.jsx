@@ -5,6 +5,7 @@ import { dices } from "../config/dices.module";
 import { Button } from "../styled/Button.module";
 import { useState } from "react";
 import GameRules from "../components/GameRules";
+import { nums } from "../config/dices.module";
 
 function GamePage(props) {
     const [randomDiceNum, setRandomDiceNum] = useState(1);
@@ -42,13 +43,22 @@ function GamePage(props) {
                 />
             </TopBar>
             <GameContainer $heightoffset={"184px"} $flexdirection={"column"}>
-                <img
-                    onClick={() => randomDice(1, 7)}
-                    src={dices[randomDiceNum - 1]}
-                    alt="dice"
-                    height={"100px"}
-                    width={"100px"}
-                />
+                {nums.map((num, i) => (
+                    <img
+                        key={i}
+                        onClick={() => randomDice(1, 7)}
+                        src={dices[num - 1]}
+                        style={
+                            num === randomDiceNum
+                                ? { display: "block" }
+                                : { display: "none" }
+                        }
+                        alt={`dice-${num}`}
+                        height={"100px"}
+                        width={"100px"}
+                    />
+                ))}
+
                 <p>Click on Dice to roll</p>
                 <Button
                     onClick={() => setTotalScore(0)}

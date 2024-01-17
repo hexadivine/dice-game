@@ -93,7 +93,11 @@ Error generating stack: `+o.message+`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
+    .numbers {
+        min-width: 100px;
+        flex-wrap: wrap;
+    }
     .error_msg {
         height: 36px;
         font-size: 24px;
@@ -126,7 +130,8 @@ Error generating stack: `+o.message+`
 `,nd=[1,2,3,4,5,6],Fm=nd.map(e=>`./images/dices/dice_${e}.png`);function Am(e){return R.jsxs(Dm,{children:[R.jsx("div",{className:"error_msg",children:e.errorMsg}),R.jsx("div",{className:"numbers",children:nd.map((t,n)=>R.jsx(Mm,{onClick:()=>e.setSelectedDiceNum(t),selected:t===e.selectedDiceNum,children:t},n))}),R.jsx("div",{className:"select_num",children:"Select Number"})]})}const Um=qe.div`
     display: flex;
     justify-content: space-between;
-    min-width: 1280px;
+    /* min-width: 1280px; */
+    flex-wrap: wrap;
     margin: 64px 80px 0;
 `,Bm=qe.div`
     max-width: 1280px;

@@ -76,7 +76,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
 
     flex-direction: ${e=>e.$flexdirection?e.$flexdirection:"row"};
-`;function Im({startGame:e}){return R.jsxs(Lm,{children:[R.jsx("div",{className:"dice_img",children:R.jsx("img",{src:"/images/dices.png",alt:"dices"})}),R.jsxs(Rm,{children:[R.jsx("h1",{children:"DICE GAME"}),R.jsx(Yi,{$type:"primary",$animation:"true",onClick:e,children:"Play Now"})]})]})}const Om=qe.div`
+`;function Im({startGame:e}){return R.jsxs(Lm,{children:[R.jsx("div",{className:"dice_img",children:R.jsx("img",{src:"./images/dices.png",alt:"dices"})}),R.jsxs(Rm,{children:[R.jsx("h1",{children:"DICE GAME"}),R.jsx(Yi,{$type:"primary",$animation:"true",onClick:e,children:"Play Now"})]})]})}const Om=qe.div`
     .score {
         font-size: 60px;
         font-weight: 500;
@@ -123,7 +123,7 @@ Error generating stack: `+o.message+`
     font-weight: 800;
     background: ${e=>e.selected?"black":"white"};
     color: ${e=>e.selected?"white":"black"};
-`,nd=[1,2,3,4,5,6],Fm=nd.map(e=>`/images/dices/dice_${e}.png`);function Am(e){return R.jsxs(Dm,{children:[R.jsx("div",{className:"error_msg",children:e.errorMsg}),R.jsx("div",{className:"numbers",children:nd.map((t,n)=>R.jsx(Mm,{onClick:()=>e.setSelectedDiceNum(t),selected:t===e.selectedDiceNum,children:t},n))}),R.jsx("div",{className:"select_num",children:"Select Number"})]})}const Um=qe.div`
+`,nd=[1,2,3,4,5,6],Fm=nd.map(e=>`./images/dices/dice_${e}.png`);function Am(e){return R.jsxs(Dm,{children:[R.jsx("div",{className:"error_msg",children:e.errorMsg}),R.jsx("div",{className:"numbers",children:nd.map((t,n)=>R.jsx(Mm,{onClick:()=>e.setSelectedDiceNum(t),selected:t===e.selectedDiceNum,children:t},n))}),R.jsx("div",{className:"select_num",children:"Select Number"})]})}const Um=qe.div`
     display: flex;
     justify-content: space-between;
     min-width: 1280px;

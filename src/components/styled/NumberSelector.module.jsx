@@ -4,7 +4,11 @@ export const NumberSelectorDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
+    .numbers {
+        min-width: 100px;
+        flex-wrap: wrap;
+    }
     .error_msg {
         height: 36px;
         font-size: 24px;

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const TopBar = styled.div`
     display: flex;
     justify-content: space-between;
-    min-width: 1280px;
+    /* min-width: 1280px; */
+    flex-wrap: wrap;
     margin: 64px 80px 0;
 `;
 

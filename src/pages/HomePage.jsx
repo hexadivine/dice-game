@@ -7,7 +7,7 @@ function HomePage({ startGame }) {
     return (
         <Container>
             <div className="dice_img">
-                <img src="/images/dices.png" alt="dices" />
+                <img src="./images/dices.png" alt="dices" />
             </div>
             <Interact>
                 <h1>DICE GAME</h1>

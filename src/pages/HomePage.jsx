@@ -5,7 +5,7 @@ import { Container } from "../styled/Container.module";
 
 function HomePage({ startGame }) {
     return (
-        <Container>
+        <Container style={{ flexWrap: "wrap" }}>
             <div className="dice_img">
                 <img src="./images/dices.png" alt="dices" />
             </div>
